@@ -14,8 +14,7 @@ app.prepare().then(() => {
     
     // Pass the request to Next.js as usual
     handle(req, res, parsedUrl);
-  }).listen(3000, (err: Error | null) => {
-    if (err) throw err;
+  }).listen(3000, () => {
     console.log('> Ready on http://localhost:3000');
   });
 });
